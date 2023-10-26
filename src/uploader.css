@@ -1,0 +1,80 @@
+/* 업로드 파일 리스트 영역 */
+.ma-uploader-list-wrapper {
+  border: 1px solid #000;
+}
+
+/* 업로드 파일 리스트 상단 타이틀 및 업로드 파일 정보 */
+.ma-uploader-list-wrapper .title {
+  text-align: center !important;
+  padding: 8px;
+  background-color: aliceblue;
+  font-size: 0.9rem;
+}
+
+.ma-uploader-list-wrapper .ma-file-info > div {
+  padding: 8px;
+  font-size: 0.85rem;
+}
+
+.ma-uploader-list-wrapper .ma-file-info:hover {
+  background-color: #e3e3e3;
+}
+
+.ma-uploader-list-wrapper > .list-title,
+.ma-uploader-list-wrapper .ma-file-info {
+  display: flex;
+  width: 100%;
+}
+.ma-uploader-list-wrapper div.file-no {
+  width: 50px;
+  max-width: 100px;
+  text-align: center;
+}
+.ma-uploader-list-wrapper div.file-name {
+  width: 70%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ma-uploader-list-wrapper div.file-szie {
+  width: 85px;
+  text-align: right;
+}
+.ma-uploader-list-wrapper div.file-icon {
+  text-align: center;
+  width: 25px;
+}
+
+/* 업로드 파일정보 닫기 아이콘*/
+.ma-uploader-list-wrapper .cross-1px {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.ma-uploader-list-wrapper .cross-1px:before,
+.ma-uploader-list-wrapper .cross-1px:after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #000;
+  border-radius: 1px;
+}
+
+.ma-uploader-list-wrapper .cross-1px:before {
+  transform: rotate(45deg);
+}
+
+.ma-uploader-list-wrapper .cross-1px:after {
+  transform: rotate(-45deg);
+}

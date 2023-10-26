@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 아래의 js 및 css 추가 및 URL설정 -->
+    <script src="./uploader.js"></script>
+    <link rel="stylesheet" href="./uploader.css" />
+  </head>
+  <body>
+    <form method="post" action="./" enctype="multipart/form-data">
+      <input type="text" value="sdfasdfsafa" name="cctv_id" /><br />
+
+      <!-- 업로드 파일 input. class이름 ma-uploader 필수 포함-->
+      <input type="file" class="ma-uploader" name="uploader" multiple />
+      <!-- 파일 리스트 영역 div -->
+      <div class="ma-uploader-list-wrapper">
+        <div class="list-title">
+          <div class="file-no title">번호</div>
+          <div class="file-name title">파일명</div>
+          <div class="file-szie title">파일크기</div>
+          <div class="file-icon title">-</div>
+        </div>
+      </div>
+
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
