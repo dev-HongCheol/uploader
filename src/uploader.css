@@ -8,12 +8,12 @@
   text-align: center !important;
   padding: 8px;
   background-color: aliceblue;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .ma-uploader-list-wrapper .ma-file-info > div {
   padding: 8px;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 .ma-uploader-list-wrapper .ma-file-info:hover {
@@ -31,7 +31,7 @@
   text-align: center;
 }
 .ma-uploader-list-wrapper div.file-name {
-  width: 70%;
+  width: calc(100% - 200px);
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
